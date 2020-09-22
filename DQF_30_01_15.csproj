@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99395F09-8AD3-4FA5-9287-D4F736D499DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DQF_30_01_15</RootNamespace>
+    <AssemblyName>DQF_30_01_15</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoFill.designer.cs">
+      <DependentUpon>AutoFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPwd.Designer.cs">
+      <DependentUpon>CPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="DefineObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefineObj.designer.cs">
+      <DependentUpon>DefineObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DQFDataSet.cs">
+      <DependentUpon>DQFDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DQFDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DQFDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuOptions.designer.cs">
+      <DependentUpon>MenuOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ODefineObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ODefineObj.designer.cs">
+      <DependentUpon>ODefineObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OracleAutoFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OracleAutoFill.designer.cs">
+      <DependentUpon>OracleAutoFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OraclePostView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OraclePostView.designer.cs">
+      <DependentUpon>OraclePostView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostView.designer.cs">
+      <DependentUpon>PostView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdmn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAdmn.designer.cs">
+      <DependentUpon>UserAdmn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AutoFill.resx">
+      <DependentUpon>AutoFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPwd.resx">
+      <DependentUpon>CPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefineObj.resx">
+      <DependentUpon>DefineObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuOptions.resx">
+      <DependentUpon>MenuOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ODefineObj.resx">
+      <DependentUpon>ODefineObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OracleAutoFill.resx">
+      <DependentUpon>OracleAutoFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OraclePostView.resx">
+      <DependentUpon>OraclePostView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostView.resx">
+      <DependentUpon>PostView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAdmn.resx">
+      <DependentUpon>UserAdmn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DQFDataSet.xsc">
+      <DependentUpon>DQFDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DQFDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DQFDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DQFDataSet.xss">
+      <DependentUpon>DQFDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
